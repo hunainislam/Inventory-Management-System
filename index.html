@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Inventory Management System</title>
+</head>
+
+<body>
+  <header class="header-hover">
+    <h1 style="font-style: italic">Inventory Management System</h1>
+  </header>
+  <div>
+    <table id="table" name="productTable">
+      <tr>
+        <th style="font-style: oblique">Product Name</th>
+        <th style="font-style: oblique">Quantity</th>
+        <th style="font-style: oblique">Price</th>
+      </tr>
+      <tr>
+        <td style="font-family: fantasy">Bulb</td>
+        <td style="font-family: fantasy">20</td>
+        <td style="font-family: fantasy">150</td>
+      </tr>
+      <tr>
+        <td style="font-family: fantasy">Down Light</td>
+        <td style="font-family: fantasy">10</td>
+        <td style="font-family: fantasy">200</td>
+      </tr>
+      <tr>
+        <td style="font-family: fantasy">Breaker</td>
+        <td style="font-family: fantasy">5</td>
+        <td style="font-family: fantasy">300</td>
+      </tr>
+    </table>
+
+    <form method="GET" class="add-product-form">
+      <label for="productName">Product Name:</label>
+
+      <br />
+
+      <input type="text" placeholder="Enter Product Name" id="ProductName" name="productNameInput"
+        class="add-product-hover" />
+
+      <br />
+
+      <label for="quantity">Quantity:</label>
+      <br />
+      <input type="text" placeholder="Enter Quantity Item" name="" id="ProductQuantity" name="productQuantityInput"
+        class="add-product-hover" />
+
+      <br />
+
+      <label for="Price">Price:</label>
+
+      <br />
+
+      <input type="text" placeholder="Enter Price" id="Number" name="productPriceInput" class="add-product-hover" />
+
+      <br />
+
+      <button id="addProductButton" class="add-product-hover" type="submit" value="Sumbit Product"
+        name="addProductButton">Add Products</button>
+
+    </form>
+
+    <footer>
+      <p style="font-family: fantasy;" ;">Created by [Malik Hunain]</p>
+    </footer>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
