@@ -1,3 +1,4 @@
+ /* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,44 +17,73 @@ header {
     text-align: center;
     color: white;
     animation: slideInFromTop 1s ease-out;
-  }
+}
 
 .header-hover:hover {
     background-color: #dcdde1;
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-}  
+}
 
-  /* Table Styling */
+/* Table Styling */
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
     animation: fadeIn 2s ease-in;
-  }
-
+}
 
 th, td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-  }
-  
+}
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
-
+}
 
 tr:hover {
     background-color: #dcdde1;
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-  }  
+}
 
-  .add-product-form {
+/* Add Product Form */
+.add-product-form {
+    margin: 20px auto;
+    text-align: center;
+}
+.add-product-form {
     font-family: fantasy;
   }
+
+
+.add-product-form input {
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.color {
+	color: #07a8e7;
+}
+
+.add-product-form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-product-form button:hover {
+    background-color: #2980b9;
+	font-family: fantasy;
+}
+
 
 /* Footer Styling */
 footer {
@@ -65,69 +95,76 @@ footer {
     bottom: 0;
     width: 100%;
     animation: fadeIn 2s ease-in;
-  }
-  
-/* Keyframe Animations */
+}
 
+/* Keyframe Animations */
 @keyframes slideInFromTop {
     0% {
-      transform: translateY(-100%);
-      opacity: 0;
+        transform: translateY(-100%);
+        opacity: 0;
     }
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
+}
+
 @keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
-/* Styling for the input form */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table {
+        width: 95%; 
+    }
+    
+    th, td {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+    
+    .add-product-form input {
+        width: 90%; 
+        margin: 10px auto;
+        font-size: 16px;
+    }
 
-.add-product-form {
-    margin: 20px auto;
-    text-align: center;
-  }
-  
-  .add-product-form input {
-    padding: 10px;
-    margin: 5px;
-    width: 150px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
+    .add-product-form button {
+        width: 95%; 
+        padding: 12px;
+        font-size: 16px;
+    }
 
-  .add-product-form:hover {
-    background-color: #dcdde1;
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-  }
+    footer {
+        font-size: 14px; 
+    }
+}
 
-  .add-product-hover:hover {
-    background-color: #dcdde1;
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-  } 
-  
-  .add-product-form button {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .add-product-form button:hover {
-    background-color: #2980b9;
-  }  
+@media (max-width: 600px) {
+    header {
+        padding: 15px; 
+        font-size: 18px; 
+    }
+
+    th, td {
+        font-size: 12px; 
+    }
+
+    .add-product-form input, .add-product-form button {
+        width: 100%; 
+    }
+
+    footer {
+        font-size: 12px; /
+    }
+}
+
 
 
   /* form template */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-hover">
+        <h1>Inventory Management System</h1>
+    </header>
+
+    <!-- Product Table -->
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added dynamically by TypeScript -->
+        </tbody>
+    </table>
+
+    <!-- Add Product Form -->
+    <div class="add-product-form">
+        <label class="color">Product Name:</label>
+        <input type="text" id="ProductName" placeholder="Product Name" required>
+        <label class="color">Quantity:</label>
+        <input type="number" id="ProductQuantity" placeholder="Quantity" required>
+        <label class="color">Price:</label>
+        <input type="number" id="Number" placeholder="Price" required>
+        <label class="color">Add Product</label>
+        <button id="addProductButton">Add Product</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by [Malik Hunain]</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
