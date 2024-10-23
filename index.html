@@ -6,7 +6,7 @@
     <title>Inventory Management System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="custom-img">
 
     <!-- Header -->
     <header class="header-hover">
@@ -20,12 +20,19 @@
                 <th>Product Name</th>
                 <th>Quantity</th>
                 <th>Price</th>
+                <th>Total Price</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Rows will be added dynamically by TypeScript -->
+            <!-- Rows will be added dynamically by JavaScript -->
         </tbody>
     </table>
+
+    <!-- Total Row -->
+    <div class="total-container">
+        <strong>Total Sum: <span id="totalSum" class="SumColor">0.00</span></strong>
+    </div>
 
     <!-- Add Product Form -->
     <div class="add-product-form">
@@ -37,6 +44,8 @@
         <input type="number" id="Number" placeholder="Price" required>
         <label class="color">Add Product</label>
         <button id="addProductButton">Add Product</button>
+        <label class="color">Generate PDF</label>
+        <button id="generatePdfButton">Generate PDF</button>
     </div>
 
     <!-- Footer -->
@@ -44,7 +53,9 @@
         <p>Created by [Malik Hunain]</p>
     </footer>
 
+    <!-- jsPDF and autoTable scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
-
