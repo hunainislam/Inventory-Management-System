@@ -89,6 +89,10 @@ tr:hover {
 	font-family: fantasy;
 }
 
+.total-container {
+    margin-left: 150px;
+}
+
 
 /* Footer Styling */
 footer {

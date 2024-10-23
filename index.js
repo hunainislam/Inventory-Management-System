@@ -6,7 +6,7 @@ const productTable = document.querySelector("#table tbody");
 const totalSumElement = document.querySelector("#totalSum");
 const generatePdfButton = document.querySelector("#generatePdfButton");
 
-const totalSum = 0;
+let totalSum = 0;
 
 // Add Event Listener for Add Product Button
 addProductButton.addEventListener("click", (event) => {
