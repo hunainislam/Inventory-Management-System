@@ -67,14 +67,7 @@ tr:hover {
     border: 1px solid #ccc;
 }
 .color {
-	color: "#393e46";
-<<<<<<< HEAD
-=======
-}
-
-.SumColor {
-	color: black;
->>>>>>> 78dc418c60e9be02432cd60a3e91a662705e8dd6
+	color: #393e46;
 }
 
 .SumColor {
@@ -188,8 +181,4 @@ footer {
 
 .custom-img {
 	background-image: url(/image/image1.png);
-<<<<<<< HEAD
-  }
-=======
-  }
->>>>>>> 78dc418c60e9be02432cd60a3e91a662705e8dd6
+}

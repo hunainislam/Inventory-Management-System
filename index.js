@@ -6,11 +6,7 @@ const productTable = document.querySelector("#table tbody");
 const totalSumElement = document.querySelector("#totalSum");
 const generatePdfButton = document.querySelector("#generatePdfButton");
 
-<<<<<<< HEAD
-let totalSum = 0;  // Track the total sum of all product prices
-=======
 const totalSum = 0; 
->>>>>>> 78dc418c60e9be02432cd60a3e91a662705e8dd6
 
 // Add Event Listener for Add Product Button
 addProductButton.addEventListener("click", (event) => {
@@ -66,11 +62,8 @@ function addProductToTable(newProduct) {
   // Add a "Remove" button to each row
   const removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
-<<<<<<< HEAD
   removeButton.style.backgroundColor = "red";
   removeButton.style.color = "white"
-=======
->>>>>>> 78dc418c60e9be02432cd60a3e91a662705e8dd6
   removeButton.classList.add("remove-btn");
   removeButton.addEventListener("click", () => {
     // Update total sum when removing a product
